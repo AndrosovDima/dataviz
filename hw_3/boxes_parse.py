@@ -42,7 +42,7 @@ class Box:
         assert len(self.offsets) > 0
     
     def __str__(self):
-        return 'Box(pos={}, size={}, offsets={})'.format(self.pos, self.size, self.offsets)
+        return 'Box(name={}, pos={}, size={}, offsets={})'.format(self.name, self.pos, self.size, self.offsets)
     
     def __repr__(self):
         return str(self)
