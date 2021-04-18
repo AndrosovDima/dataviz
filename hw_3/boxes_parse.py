@@ -48,5 +48,5 @@ class Box:
         return str(self)
 
 
-boxes = [Box(line) for line in raw_data.strip().split('\n')]
-print(boxes)
+# boxes = [Box(line) for line in raw_data.strip().split('\n')]
+# print(boxes)
