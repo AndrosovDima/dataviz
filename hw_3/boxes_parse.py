@@ -38,7 +38,7 @@ class Box:
         self.name = name
         self.pos = Pos.parse(arr[0])
         self.size = Pos.parse(arr[1])
-        self.offsets = [Pos.parse(pos) for pos in arr[2].split(' ')]
+        self.offsets = {i: Pos.parse(pos) for i, pos in enumerate(arr[2].split(' '))}
         assert len(self.offsets) > 0
     
     def __str__(self):
